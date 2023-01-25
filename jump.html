@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>红黄蓝</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="./ryb.png">
+	<link rel="stylesheet" href="src/css/jump.css">
+</head>
+<body>
+<!----开始界面------>
+<div class="begin_mask">
+	<div class="begain_content">
+		<button class="start">
+			开始
+		</button>
+	</div>
+</div>
+<!----主游戏界面---->
+<div class="main_content">
+	<img src="game_logo.png">
+	<div class = "info">
+		<div class="level-gaming">
+			LEVEL：<span class="level-current">1</span>
+		</div>
+		<div class="score-gaming">
+			SCORE：<span class="score-current">0</span>
+		</div>
+		<div class="score-time-sign">
+			TIME：<span class="time-current">10</span>
+		</div>
+	</div>
+</div>
+<!----主游戏框-2D--->
+<!--
+<div class="game_main_content">
+	<div class = "game_vector"></div>
+	<p class="label_attr">color</p>
+</div>   ----->
+
+<!----主游戏框-3D--->
+<div class="game_main_content">
+	<!--
+	<div class = "game_vector"></div>
+	<p class="label_attr"></p>-->
+	<div class="stage">  <!--舞台元素，视角所在-->
+		<ul class="three-d-box">   <!--动画容器，通过它来控制整个立方体-->
+			<li id = "li1">color</li>  <!--动画元素，立方体的六个面-->
+			<li id = "li2">color</li>
+			<li id = "li3">color</li>
+			<li id = "li4">color</li>
+			<li id = "li5">color</li>
+			<li id = "li6">color</li>
+		</ul>
+	</div>
+</div>
+
+<!------游戏btn框------>
+<div class="game_btn_content">
+	<div class = "btn_info">
+		<button class="yes">
+			YES
+		</button>
+		<button class="no">
+			NO
+		</button>
+	</div>
+</div>
+
+<div class="over_mask">
+	<div class="content">
+		<div class="score-container">
+			<p class="score">0</p>
+		</div>
+		<button class="restart">
+			重新开始
+		</button>
+	</div>
+</div>
+	<script src="libs/three.min.js"></script>
+	<script src="src/js/tweenjs.min.js"></script>
+	<script src="src/js/canvas.texture.js"></script>
+	<script src="src/js/main.js"></script>
+</body>
+</html>
